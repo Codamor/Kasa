@@ -6,18 +6,17 @@ class Navigation extends React.Component{
     render(){
         return (
             <nav className="navigation">
-                <ul>
-                    <li>
-                        <link to="/">Home</link>
+                <ul className="navigation__list">
+                    <li className="navigation__item">
+                        Accueil
                     </li>
-                    <li>
-                        <link to="/about">A propos</link>
+                    <li className="navigation__item">
+                        A propos
                     </li>
                 </ul>
             </nav>
         )
     }
-
 }
 
 export default Navigation ;
