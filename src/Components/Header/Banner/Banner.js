@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.css" ;
-import banner from "../../../assets/kasa_background.png"
+import banner from "../../../assets/img/kasa_background.png"
 
 class Banner extends React.Component{
     render() {
