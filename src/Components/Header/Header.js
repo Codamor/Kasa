@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css" ;
 import Logo from "./Logo/Logo" ;
 import Navigation from "./Navigation/Navigation";
-import Banner from "./Banner/Banner" ;
 
 class Header extends React.Component{
     render() {
