@@ -1,0 +1,21 @@
+.navigation{
+    width: 310px;
+    height: 35px;
+}
+
+.navigation__list{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.navigation__link{
+    color: #FF6060;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navigation__link:hover{
+    text-decoration: underline;
+}
