@@ -1,10 +1,12 @@
 import React from "react";
+import {BrowserRouter} from "react-router-dom" ;
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
-    <React.Fragment>
-      <h1>Kasa</h1>
-    </React.Fragment>
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>
   );
 }
 
