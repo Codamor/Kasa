@@ -8,10 +8,10 @@ class Navigation extends React.Component{
             <nav className="navigation">
                 <ul className="navigation__list">
                     <li className="navigation__item">
-                        Accueil
+                        <Link to="home" className="navigation__link">Accueil</Link>
                     </li>
                     <li className="navigation__item">
-                        A propos
+                        <Link to="about" className="navigation__link">A propos</Link>
                     </li>
                 </ul>
             </nav>
