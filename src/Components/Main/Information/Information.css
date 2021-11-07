@@ -1,0 +1,13 @@
+.information{
+    width: auto;
+}
+
+.information__subtitle{
+    font-size: 1.3em;
+}
+
+.information__title, .information__subtitle{
+    font-weight: 500;
+    color: #FF6060;
+}
+
