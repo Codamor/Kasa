@@ -1,12 +1,12 @@
 import React from "react";
 import "./Main.css" ;
-import Banner from "./Banner/Banner";
+import Tag from "./Tag/Tag";
 
 class Main extends React.Component{
     render(){
         return (
             <main>
-                <Banner />
+
             </main>
         )
     }
