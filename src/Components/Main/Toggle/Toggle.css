@@ -1,0 +1,19 @@
+.toggle{
+    width: 582px ;
+    height: 300px ;
+}
+
+.toggle__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #FF6060;
+}
+
+.toggle__title  h3{
+    margin-left: 15px;
+    font-weight: 500;
+    color: #fff;
+}
