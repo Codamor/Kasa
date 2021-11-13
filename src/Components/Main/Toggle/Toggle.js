@@ -12,7 +12,7 @@ class Toggle extends React.Component{
                 <div className="toggle__title">
                     <h3>{this.props.title}</h3>
                 </div>
-                <div className="toggle__text">
+                <div className="toggle__content">
                     <p>{this.props.text}</p>
                 </div>
             </div>
