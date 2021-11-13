@@ -10,10 +10,10 @@ class Toggle extends React.Component{
         return(
             <div className="toggle">
                 <div className="toggle__title">
-                    {this.props.title}
+                    <h3>{this.props.title}</h3>
                 </div>
                 <div className="toggle__text">
-                    {this.props.text}
+                    <p>{this.props.text}</p>
                 </div>
             </div>
         )
