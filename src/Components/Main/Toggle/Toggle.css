@@ -1,6 +1,7 @@
 .toggle{
     width: 582px ;
-    height: 300px ;
+    border-radius: 0 0 10px 10px;
+    background-color: #F6F6F6;
 }
 
 .toggle__title{
@@ -10,10 +11,24 @@
     height: 52px;
     border-radius: 10px;
     background-color: #FF6060;
+    cursor: pointer;
 }
 
 .toggle__title  h3{
-    margin-left: 15px;
+    margin: 0 20px;
     font-weight: 400;
     color: #fff;
+}
+
+.toggle__content{
+    display: none;
+    padding: 20px ;
+}
+
+.toggle__content[visible="true"]{
+    display: block;
+}
+
+.toggle__content{
+    font-weight: 400;
 }
