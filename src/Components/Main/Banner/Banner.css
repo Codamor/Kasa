@@ -1,0 +1,29 @@
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    background-image: url("/src/assets/img/background.png");
+    overflow: hidden;
+}
+
+.banner__overlay{
+    position: absolute;
+    width: 1240px;
+    height: 223px;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+}
+
+.banner__title{
+    position: absolute;
+    font-size: 3.0em;
+    color: #fff;
+}
+
+
+

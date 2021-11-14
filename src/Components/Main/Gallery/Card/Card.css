@@ -1,0 +1,15 @@
+.card{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.card__title{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2em;
+    color: #fff;
+}

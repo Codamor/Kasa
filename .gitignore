@@ -3,6 +3,9 @@
 #vscode history folder
 .history/
 
+#jetbrains directory
+.idea/
+
 # dependencies
 /node_modules
 /.pnp
