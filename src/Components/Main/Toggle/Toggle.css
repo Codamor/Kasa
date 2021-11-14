@@ -20,6 +20,15 @@
     color: #fff;
 }
 
+.toggle__title::after{
+    margin-right: 15px;
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #fff;
+}
+
 .toggle__content{
     display: none;
     padding: 20px ;
