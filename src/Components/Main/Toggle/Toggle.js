@@ -34,6 +34,9 @@ class Toggle extends React.Component{
             <div className="toggle">
                 <div className="toggle__title" onClick={this.toggle}>
                     <h3>{this.props.title}</h3>
+                    <span className="toggle__off">
+
+                    </span>
                 </div>
                 <div className="toggle__content" visible={this.state.visible}>
                     <p>{this.props.text}</p>
@@ -44,5 +47,7 @@ class Toggle extends React.Component{
         )
     }
 }
+
+//TODO add fontawesome icon to title bar
 
 export default Toggle ;
