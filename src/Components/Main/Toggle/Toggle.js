@@ -18,7 +18,6 @@ class Toggle extends React.Component{
             visible: !this.state.visible
         })
 
-
     }
 
     render(){
