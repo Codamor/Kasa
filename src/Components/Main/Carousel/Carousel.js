@@ -10,7 +10,7 @@ class Carousel extends React.Component{
         return (
             <div className="carousel">
 
-                <img className="carousel__picture" src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"/>
+                <img className="carousel__picture" src={this.props.picture}/>
 
                 <div className="carousel__nav">
                     <div className="carousel__nav-previous">
