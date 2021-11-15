@@ -29,13 +29,9 @@
 }
 
 .toggle__content{
-    display: none;
     padding: 20px ;
 }
 
-.toggle__content[visible="true"]{
-    display: block;
-}
 
 .toggle__content{
     font-weight: 400;
