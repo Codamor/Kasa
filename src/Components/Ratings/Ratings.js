@@ -1,7 +1,7 @@
 import React from "react";
 import "./Ratings.css" ;
-import star_red from "../../../assets/img/star_grey.png" ;
-import star_grey from "../../../assets/img/star_red.png" ;
+import star_red from "../../assets/img/star_grey.png" ;
+import star_grey from "../../assets/img/star_red.png" ;
 
 class Ratings extends React.Component{
     constructor(props) {
