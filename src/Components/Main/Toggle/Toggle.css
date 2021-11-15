@@ -28,6 +28,11 @@
     color: #fff;
 }
 
+.toggle__title--onClick::after{
+    content: "\f077";
+}
+
+
 .toggle__content{
     padding: 20px ;
 }
