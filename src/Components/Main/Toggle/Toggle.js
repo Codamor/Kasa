@@ -6,7 +6,7 @@ class Toggle extends React.Component{
         super(props);
 
         this.state = {
-            visible: "false"
+            visible: false
         }
 
         this.toggle = this.toggle.bind(this) ;
@@ -14,33 +14,28 @@ class Toggle extends React.Component{
     }
 
     toggle(){
-        if (this.state.visible === "true"){
-            this.setState(
-                {
-                    visible: "false"
-                }
-            )
-        } else {
-            this.setState(
-                {
-                    visible: "true"
-                }
-            )
-        }
+        this.setState({
+            visible: !this.state.visible
+        })
+
     }
 
     render(){
         return(
             <div className="toggle">
-                <div className="toggle__title" onClick={this.toggle}>
+                <div
+                    className={`
+                        toggle__title
+                        ${this.state.visible ? "toggle__title--onClick" : ""}
+                    `}
+                          onClick={this.toggle}>
                     <h3>{this.props.title}</h3>
-                    <span className="toggle__off">
-
-                    </span>
                 </div>
-                <div className="toggle__content" visible={this.state.visible}>
-                    <p>{this.props.text}</p>
-                </div>
+                    {
+                        this.state.visible === true && <div className="toggle__content" >
+                                                            <p>{this.props.text}</p>
+                                                        </div>
+                    }
             </div>
 
 
