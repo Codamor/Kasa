@@ -15,7 +15,7 @@ class Banner extends React.Component{
                 <img src={this.props.picture} alt={this.props.alt} title={this.props.title}/>
 
                 <h2 className="banner__title">
-                    {this.props.h2Title}
+                    {this.props.bannerTitle}
                 </h2>
             </div>
         );
