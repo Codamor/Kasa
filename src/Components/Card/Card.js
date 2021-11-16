@@ -9,8 +9,14 @@ class Card extends React.Component{
     render(){
         return(
             <div className="card">
-                <img src={this.props.image} alt={this.props.title} />
-                <h2 className="card__title">{this.props.title}</h2>
+                <img
+                    className="card__picture"
+                    src={this.props.picture}
+                    alt={this.props.alt}
+                    title={this.props.title}
+                />
+
+                <h2 className="card__title">{this.props.cardTitle}</h2>
             </div>
         )
     }
