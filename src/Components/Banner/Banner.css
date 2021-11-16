@@ -21,7 +21,8 @@
 
 .banner__title{
     position: absolute;
-    font-size: 3.0em;
+    font-size: 2.6em;
+    font-weight: 500;
     color: #fff;
 }
 
