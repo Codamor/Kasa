@@ -3,6 +3,8 @@ import "./MainAbout.css" ;
 import Banner from "../../Components/Banner/Banner";
 import Toggle from "../../Components/Toggle/Toggle";
 
+import aboutBackground from "../../assets/img/about_bg.png"
+
 
 class MainAbout extends React.Component{
     constructor(props) {
@@ -13,7 +15,12 @@ class MainAbout extends React.Component{
 
         return(
             <main className="main">
-                <Banner />
+                <Banner
+                    picture={aboutBackground}
+                    alt={"Les valeurs fondatrices de Kasa."}
+                    title={"Les valeurs fondatrices de Kasa."}
+                />
+
                 <Toggle />
                 <Toggle />
                 <Toggle />
