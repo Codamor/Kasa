@@ -9,7 +9,7 @@ class Card extends React.Component{
 
     render(){
         return(
-            <Link to={"location?=" + this.props.url} className="card" title={this.props.title}>
+            <Link to={this.props.url} className="card" title={this.props.title}>
                 <img
                     className="card__picture"
                     src={this.props.picture}
