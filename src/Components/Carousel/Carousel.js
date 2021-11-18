@@ -51,7 +51,6 @@ class Carousel extends React.Component{
                                     />
                     )
                 }
-
                 <div className="carousel__nav">
                     <div className="carousel__nav-previous" onClick={this.previousImage.bind(this)}>
                     </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./MainLocation.css" ;
 import Carousel from "../../Components/Carousel/Carousel";
+import Information from "../../Components/Information/Information";
+import Tags from "../../Components/Tags/Tags";
 
 class MainLocation extends React.Component{
     constructor(props) {
@@ -49,13 +51,14 @@ class MainLocation extends React.Component{
             })
     }
 
-
-
     render() {
-
         return (
             <main className="main">
                 <Carousel pictures={this.state.pictures} picturesTitle={this.state.title} />
+
+                <Information title={this.state.title} location={this.state.location} />
+
+                <Tags tags={this.state.tags}/>
             </main>
         );
     }
