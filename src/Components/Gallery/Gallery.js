@@ -22,6 +22,7 @@ class Gallery extends React.Component{
                                      title={location.title}
                                      cardTitle={location.title}
                                      key={location.id}
+                                     url={location.id}
                                  />
                              )
                          }
