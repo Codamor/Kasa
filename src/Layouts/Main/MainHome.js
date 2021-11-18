@@ -7,10 +7,27 @@ import Gallery from "../../Components/Gallery/Gallery";
 class MainHome extends React.Component{
     constructor(props){
         super(props)
+        this.state={
+            locations: []
+        }
+    }
+
+    componentDidMount() {
+        fetch("/api.json")
+            .then(response => response.json())
+            .then(result => {
+                this.setState(
+                    {
+                        locations: result
+                    }
+                )
+            })
+
     }
 
     render(){
         return (
+
             <main className="main">
                 <Banner
                     bannerTitle={"Chez vous, partout et ailleurs"}
@@ -19,7 +36,7 @@ class MainHome extends React.Component{
                     alt={"Chez vous, partout et ailleurs"}
                 />
 
-                <Gallery />
+                <Gallery locations={this.state.locations}/>
 
             </main>
         )
