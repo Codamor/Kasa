@@ -1,18 +1,38 @@
 import React from "react";
 import "./MainLocation.css" ;
+import Carousel from "../../Components/Carousel/Carousel";
 
 class MainLocation extends React.Component{
     constructor(props) {
         super(props);
-        this.locationID = this.props.match.params.id;
+        this.locationId = this.props.match.params.id;
+        this.state = {
+            allLocations: []
+        }
+    }
+
+    componentDidMount() {
+        fetch("api.json")
+            .then(response => {
+                return response.json()
+            })
+            .then(result => {
+                this.setState(
+                    {
+                        allLocations: result
+                    }
+                )
+            })
     }
 
     render() {
-        return (
-            <div>
-                {this.locationID}
 
-            </div>
+        return (
+            <main className="main">
+
+
+
+            </main>
         );
     }
 
