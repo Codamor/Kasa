@@ -19,7 +19,7 @@ class MainLocation extends React.Component{
         }
     }
 
-    getLocationFromId(allLocations, locationId){
+    setLocationStateFromLocationId(allLocations, locationId){
         for (let i = 0; i < allLocations.length; i++) {
             if (allLocations[i].id === this.locationId){
                 this.setState(
@@ -45,7 +45,7 @@ class MainLocation extends React.Component{
                 return response.json()
             })
             .then(result => {
-                this.getLocationFromId(result, this.locationId)
+                this.setLocationStateFromLocationId(result, this.locationId)
             })
     }
 
