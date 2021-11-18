@@ -7,6 +7,10 @@ body {
   color: #FF6060;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ul{
   list-style-type: none;
 }
