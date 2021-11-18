@@ -7,7 +7,35 @@ class MainLocation extends React.Component{
         super(props);
         this.locationId = this.props.match.params.id;
         this.state = {
-            allLocations: []
+            pictures: [],
+            title: "",
+            location: "",
+            tags: [],
+            hostName: "",
+            hostPicture: "",
+            rating: 0,
+            description: "",
+            equipments: []
+        }
+    }
+
+    getLocationFromId(allLocations, locationId){
+        for (let i = 0; i < allLocations.length; i++) {
+            if (allLocations[i].id === this.locationId){
+                this.setState(
+                    {
+                        pictures: allLocations[i].pictures,
+                        title: allLocations[i].title,
+                        location: allLocations[i].location,
+                        tags: allLocations[i].tags,
+                        hostName: allLocations[i].host.name,
+                        hostPicture: allLocations[i].host.picture,
+                        rating: allLocations[i].rating,
+                        description: allLocations[i].description,
+                        equipments: allLocations[i].equipments
+                    }
+                )
+            }
         }
     }
 
@@ -17,20 +45,16 @@ class MainLocation extends React.Component{
                 return response.json()
             })
             .then(result => {
-                this.setState(
-                    {
-                        allLocations: result
-                    }
-                )
+                this.getLocationFromId(result, this.locationId)
             })
     }
+
+
 
     render() {
 
         return (
             <main className="main">
-
-
 
             </main>
         );
