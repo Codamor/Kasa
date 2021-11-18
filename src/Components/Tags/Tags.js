@@ -1,18 +1,25 @@
 import React from "react";
 import "./Tags.css" ;
 
-class Tag extends React.Component{
+class Tags extends React.Component{
     constructor(props) {
         super(props);
     }
 
     render(){
         return (
-            <div className="tag">
-                {this.props.text}
+            <div className="tags__container">
+                {
+                    this.props.tags.map(
+                        tag => <div className="tag__item">{tag}</div>
+                    )
+                }
             </div>
         )
+
+
+
     }
 }
 
-export default Tag ;
+export default Tags ;
