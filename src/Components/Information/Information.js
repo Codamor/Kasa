@@ -13,7 +13,7 @@ class Information extends React.Component{
                     {this.props.title}
                 </h1>
                 <h2 className="information__subtitle">
-                    {this.props.subtitle}
+                    {this.props.location}
                 </h2>
             </div>
         );
