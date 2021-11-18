@@ -55,7 +55,7 @@ class MainLocation extends React.Component{
 
         return (
             <main className="main">
-
+                <Carousel pictures={this.state.pictures} picturesTitle={this.state.title} />
             </main>
         );
     }

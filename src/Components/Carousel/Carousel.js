@@ -7,10 +7,20 @@ class Carousel extends React.Component{
     }
 
     render(){
+
         return (
             <div className="carousel">
 
-                <img className="carousel__picture" src={this.props.picture}/>
+                {
+                    this.props.pictures.map(
+                        picture => <img
+                                        className="carousel__picture"
+                                        src={picture}
+                                        alt={this.props.picturesTitle}
+                                        title={this.props.picturesTitle}
+                                    />
+                    )
+                }
 
                 <div className="carousel__nav">
                     <div className="carousel__nav-previous">
