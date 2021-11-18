@@ -5,30 +5,15 @@ import Card from "../Card/Card";
 class Gallery extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {
-            locations: []
-        }
     }
 
-    componentDidMount() {
-        fetch("/api.json")
-            .then(response => response.json())
-            .then(result => {
-                this.setState(
-                    {
-                        locations: result
-                    }
-                )
-            })
-
-    }
 
     render() {
         return (
 
              <div className="gallery">
                  {
-                     this.state.locations.map(
+                     this.props.locations.map(
                          (location) => {
                              return (
                                  <Card
@@ -36,6 +21,7 @@ class Gallery extends React.Component{
                                      alt={location.title}
                                      title={location.title}
                                      cardTitle={location.title}
+                                     key={location.id}
                                  />
                              )
                          }
