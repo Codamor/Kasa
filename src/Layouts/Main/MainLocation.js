@@ -59,6 +59,7 @@ class MainLocation extends React.Component{
                 <Information title={this.state.title} location={this.state.location} />
 
                 <Tags tags={this.state.tags}/>
+                
             </main>
         );
     }
