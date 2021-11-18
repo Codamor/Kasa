@@ -4,6 +4,9 @@ import "./Carousel.css" ;
 class Carousel extends React.Component{
     constructor(props) {
         super(props);
+        this.state = {
+            currentIndex: 0
+        }
     }
 
     render(){
@@ -13,11 +16,13 @@ class Carousel extends React.Component{
 
                 {
                     this.props.pictures.map(
-                        picture => <img
+                        (picture, index) => <img
                                         className="carousel__picture"
                                         src={picture}
+                                        visible={index === this.state.currentIndex ? "true" : ""}
                                         alt={this.props.picturesTitle}
                                         title={this.props.picturesTitle}
+                                        key={picture}
                                     />
                     )
                 }
