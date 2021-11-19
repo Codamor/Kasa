@@ -3,6 +3,7 @@ import "./MainLocation.scss" ;
 import Carousel from "../../Components/Carousel/Carousel";
 import Information from "../../Components/Information/Information";
 import Tags from "../../Components/Tags/Tags";
+import Host from "../../Components/Host/Host";
 
 class MainLocation extends React.Component{
     constructor(props) {
@@ -59,6 +60,8 @@ class MainLocation extends React.Component{
                 <Information title={this.state.title} location={this.state.location} />
 
                 <Tags tags={this.state.tags}/>
+
+                <Host name={this.state.hostName} src={this.state.hostPicture} />
                 
             </main>
         );
