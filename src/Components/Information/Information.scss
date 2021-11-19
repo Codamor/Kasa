@@ -1,0 +1,12 @@
+.information{
+    width: auto;
+    &__title, &__subtitle{
+        font-weight: 500;
+    }
+    &__subtitle{
+        font-size: 1em;
+    }
+}
+
+
+
