@@ -1,0 +1,16 @@
+.navigation{
+    width: 310px;
+    height: 35px;
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+    &__link{
+        font-size: 1.4em;
+        text-decoration: none;
+    }
+    &__link:hover{
+        text-decoration: underline;
+    }
+}
