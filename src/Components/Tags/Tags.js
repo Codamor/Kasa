@@ -11,7 +11,7 @@ class Tags extends React.Component{
             <div className="tags__container">
                 {
                     this.props.tags.map(
-                        tag => <div className="tag__item">{tag}</div>
+                        tag => <div className="tags__item">{tag}</div>
                     )
                 }
             </div>
