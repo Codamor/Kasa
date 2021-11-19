@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main404.css" ;
+import "./Main404.scss" ;
 
 class Main404 extends React.Component{
     render(){

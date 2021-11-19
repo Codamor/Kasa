@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.css" ;
+import "./Main.scss" ;
 import Banner from "../../Components/Banner/Banner";
 import Toggle from "../../Components/Toggle/Toggle";
 
