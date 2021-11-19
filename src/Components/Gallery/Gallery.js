@@ -1,5 +1,5 @@
 import React from "react";
-import "./Gallery.css" ;
+import "./Gallery.scss" ;
 import Card from "../Card/Card";
 
 class Gallery extends React.Component{

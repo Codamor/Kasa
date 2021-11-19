@@ -1,5 +1,5 @@
 import React from "react";
-import "./Host.css";
+import "./Host.scss";
 
 class Host extends React.Component{
     constructor(props){

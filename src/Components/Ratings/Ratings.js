@@ -1,5 +1,5 @@
 import React from "react";
-import "./Ratings.css" ;
+import "./Ratings.scss" ;
 import star_red from "../../assets/img/star_grey.png" ;
 import star_grey from "../../assets/img/star_red.png" ;
 
