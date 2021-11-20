@@ -4,6 +4,9 @@ import Carousel from "../../Components/Carousel/Carousel";
 import Information from "../../Components/Information/Information";
 import Tags from "../../Components/Tags/Tags";
 import Host from "../../Components/Host/Host";
+import Toggle from "../../Components/Toggle/Toggle";
+import Ratings from "../../Components/Ratings/Ratings";
+import List from "../../Components/List/List";
 
 class MainLocation extends React.Component{
     constructor(props) {
@@ -22,9 +25,10 @@ class MainLocation extends React.Component{
         }
     }
 
-    setLocationStateFromLocationId(allLocations, locationId){
-        for (let i = 0; i < allLocations.length; i++) {
+    setLocationStateFromLocationId(allLocations){
+        for (let i = 0; i < allLocations.length; i++) { //TODO find method instead for
             if (allLocations[i].id === this.locationId){
+                /*let location = allLocations[i]*/ //TODO a la place de allocations[i]
                 this.setState(
                     {
                         pictures: allLocations[i].pictures,
@@ -38,6 +42,7 @@ class MainLocation extends React.Component{
                         equipments: allLocations[i].equipments
                     }
                 )
+                break ; //TODO check
             }
         }
     }
@@ -62,6 +67,12 @@ class MainLocation extends React.Component{
                 <Tags tags={this.state.tags}/>
 
                 <Host name={this.state.hostName} src={this.state.hostPicture} />
+
+                <Ratings ratings={this.state.rating} />
+
+                <Toggle title={"Equipements"} >
+                    <List list={this.state.equipments}/>
+                </Toggle>
                 
             </main>
         );
