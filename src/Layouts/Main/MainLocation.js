@@ -1,5 +1,4 @@
 import React from "react";
-import "./MainLocation.scss" ;
 import Carousel from "../../Components/Carousel/Carousel";
 import Information from "../../Components/Information/Information";
 import Tags from "../../Components/Tags/Tags";
@@ -7,6 +6,7 @@ import Host from "../../Components/Host/Host";
 import Toggle from "../../Components/Toggle/Toggle";
 import Ratings from "../../Components/Ratings/Ratings";
 import List from "../../Components/List/List";
+import Container from "../../Components/Container/Container";
 
 class MainLocation extends React.Component{
     constructor(props) {
@@ -62,24 +62,39 @@ class MainLocation extends React.Component{
             <main className="main">
                 <Carousel pictures={this.state.pictures} picturesTitle={this.state.title} />
 
-                <Information title={this.state.title} location={this.state.location} />
+                <Container
+                    left={
+                        <React.Fragment>
+                            <Information title={this.state.title} location={this.state.location} />
+                            <Tags tags={this.state.tags}/>
+                        </React.Fragment>
 
-                <Tags tags={this.state.tags}/>
+                    }
+                    right={
+                        <React.Fragment>
+                            <Host name={this.state.hostName} src={this.state.hostPicture} />
+                            <Ratings ratings={this.state.rating} />
+                        </React.Fragment>
 
-                <Host name={this.state.hostName} src={this.state.hostPicture} />
+                    }
+                />
 
-                <Ratings ratings={this.state.rating} />
+                <Container
+                    left={
+                        <Toggle title={"Description"}>
+                            <p>
+                                {this.state.description}
+                            </p>
+                        </Toggle>
+                    }
 
-                <Toggle title={"Description"}>
-                    <p>
-                        {this.state.description}
-                    </p>
-                </Toggle>
+                    right={
+                        <Toggle title={"Equipements"} >
+                            <List list={this.state.equipments}/>
+                        </Toggle>
+                    }
+                />
 
-                <Toggle title={"Equipements"} >
-                    <List list={this.state.equipments}/>
-                </Toggle>
-                
             </main>
         );
     }
