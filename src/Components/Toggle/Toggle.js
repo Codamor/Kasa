@@ -23,7 +23,7 @@ class Toggle extends React.Component{
     render(){
 
         return(
-            <div className="toggle">
+            <div className={`toggle ${this.props.aboutClass}`}>
                 <div
                     className={`toggle__title ${this.state.visible ? "toggle__title--onClick" : ""} `} onClick={this.toggle}>
                     <h3>{this.props.title}</h3>
