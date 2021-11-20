@@ -1,6 +1,8 @@
-.tags__container{
-    display: flex;
-    &_item{
+.tags{
+    &__container {
+        display: flex;
+    }
+    &__item{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,3 +15,4 @@
         color: #fff;
     }
 }
+

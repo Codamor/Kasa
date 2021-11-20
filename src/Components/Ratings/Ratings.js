@@ -10,9 +10,10 @@ class Ratings extends React.Component{
 
     generate(){
         const allStars = [] ;
-        const greyStarsToGenerate = 5 - this.props.ratings
+        const greyStarsToGenerate = 5 - this.props.ratings ;
+        const redStarsTGenerate = this.props.ratings ;
 
-        for (let i = 0; i < this.props.ratings; i++) {
+        for (let i = 0; i < redStarsTGenerate; i++) {
             allStars.push(<img className="star" src={star_red}/>)
         }
 
@@ -27,7 +28,9 @@ class Ratings extends React.Component{
 
         return (
             <div className="rating">
-                {this.generate()}
+                {
+                    this.generate()
+                }
             </div>
         )
     }

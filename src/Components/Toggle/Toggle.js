@@ -21,21 +21,22 @@ class Toggle extends React.Component{
     }
 
     render(){
+
         return(
             <div className="toggle">
                 <div
-                    className={`
-                        toggle__title
-                        ${this.state.visible ? "toggle__title--onClick" : ""}
-                    `}
-                          onClick={this.toggle}>
+                    className={`toggle__title ${this.state.visible ? "toggle__title--onClick" : ""} `} onClick={this.toggle}>
                     <h3>{this.props.title}</h3>
                 </div>
-                    {
-                        this.state.visible === true && <div className="toggle__content" >
-                                                            <p>{this.props.text}</p>
-                                                        </div>
-                    }
+
+                {
+                    this.state.visible === true &&
+                        <div className="toggle__content">
+                            {
+                                this.props.children
+                            }
+                        </div>
+                }
             </div>
 
 
