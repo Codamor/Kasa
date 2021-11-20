@@ -70,6 +70,12 @@ class MainLocation extends React.Component{
 
                 <Ratings ratings={this.state.rating} />
 
+                <Toggle title={"Description"}>
+                    <p>
+                        {this.state.description}
+                    </p>
+                </Toggle>
+
                 <Toggle title={"Equipements"} >
                     <List list={this.state.equipments}/>
                 </Toggle>
