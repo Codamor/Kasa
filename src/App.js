@@ -8,20 +8,24 @@ import MainHome from "./Layouts/Main/MainHome";
 import MainLocation from "./Layouts/Main/MainLocation";
 import Main404 from "./Layouts/Main/Main404";
 
-function App() {
-  return (
-      <BrowserRouter>
-          <Header />
-            <Switch>
-                <Route exact path="/" component={MainHome} />
-                <Route path="/about" component={MainAbout} />
-                <Route path="/:id" component={MainLocation}/>
-                <Route component={Main404} />
-            </Switch>
-          <Footer />
-      </BrowserRouter>
+class App extends React.Component {
 
-  );
+    render(){
+        return (
+            <BrowserRouter>
+                <Header />
+                <Switch>
+                    <Route exact path="/" component={MainHome} />
+                    <Route path="/about" component={MainAbout} />
+                    <Route path="/:id" component={MainLocation}/>
+                    <Route component={Main404} />
+                </Switch>
+                <Footer />
+            </BrowserRouter>
+
+        )
+    }
+
 }
 
 export default App;
