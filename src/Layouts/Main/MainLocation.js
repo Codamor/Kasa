@@ -1,5 +1,4 @@
 import React from "react";
-import "./MainLocation.scss" ;
 import Carousel from "../../Components/Carousel/Carousel";
 import Information from "../../Components/Information/Information";
 import Tags from "../../Components/Tags/Tags";
