@@ -1,6 +1,11 @@
+@import "src/styles/variables";
+
 .tags{
     &__container {
         display: flex;
+        @media screen and (max-width: $small-resolution) {
+            flex-direction: column;
+        }
     }
     &__item{
         display: flex;
@@ -13,6 +18,9 @@
         background-color: #FF6060;
         font-size: 0.7em;
         color: #fff;
+        @media screen and (max-width: $small-resolution){
+            margin: 7px 0;
+        }
     }
 }
 
