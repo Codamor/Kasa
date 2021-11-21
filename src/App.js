@@ -1,6 +1,8 @@
 import React from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom" ;
 
+import "./styles/styles.scss"
+
 import Header from "./Layouts/Header/Header";
 import Footer from "./Layouts/Footer/Footer";
 import MainAbout from "./Layouts/Main/MainAbout";
@@ -25,7 +27,6 @@ class App extends React.Component {
 
         )
     }
-
 }
 
 export default App;
