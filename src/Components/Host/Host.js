@@ -2,9 +2,6 @@ import React from "react";
 import "./Host.scss";
 
 class Host extends React.Component{
-    constructor(props){
-        super(props)
-    }
 
     render(){
         return(

@@ -4,9 +4,6 @@ import star_red from "../../assets/img/star_grey.png" ;
 import star_grey from "../../assets/img/star_red.png" ;
 
 class Ratings extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     generate(){
         const allStars = [] ;

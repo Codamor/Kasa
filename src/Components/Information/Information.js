@@ -2,9 +2,6 @@ import React from "react";
 import "./Information.scss" ;
 
 class Information extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

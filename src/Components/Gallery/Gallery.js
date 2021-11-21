@@ -3,10 +3,6 @@ import "./Gallery.scss" ;
 import Card from "../Card/Card";
 
 class Gallery extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
 
     render() {
         return (
