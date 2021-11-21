@@ -1,6 +1,11 @@
+@import "src/styles/_variables" ;
+
 .container{
   display: flex;
   width: 100%;
+  @media screen and (max-width: $small-resolution){
+    flex-direction: column;
+  }
 
   &__left, &__right{
     display: flex;
@@ -10,8 +15,15 @@
   }
   &__left{
     align-items: flex-start;
+    @media screen and (max-width: $small-resolution){
+      align-items: center;
+    }
   }
   &__right{
     align-items: flex-end;
+    @media screen and (max-width: $small-resolution){
+      align-items: center;
+      margin-top: 20px;
+    }
   }
 }

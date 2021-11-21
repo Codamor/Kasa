@@ -1,3 +1,5 @@
+@import "./src/styles/_variables";
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -5,4 +7,7 @@
     width: 1240px;
     margin: 25px auto;
     height: 68px;
+    @media screen and (max-width: $small-resolution){
+        width: 100%;
+    }
 }
