@@ -9,13 +9,14 @@ class Ratings extends React.Component{
         const allStars = [] ;
         const greyStarsToGenerate = 5 - this.props.ratings ;
         const redStarsTGenerate = this.props.ratings ;
+        let propsKey = 0;
 
         for (let i = 0; i < redStarsTGenerate; i++) {
-            allStars.push(<img className="star" src={star_red} alt="note positive"/>)
+            allStars.push(<img className="star" src={star_red} alt="note positive" key={propsKey += 1}/> )
         }
 
         for (let i = 0; i < greyStarsToGenerate; i++) {
-            allStars.push(<img className="star" src={star_grey} alt="note neutre"/>)
+            allStars.push(<img className="star" src={star_grey} alt="note neutre" key={propsKey += 1}/>)
         }
 
         return allStars ;
