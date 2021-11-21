@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Switch, Route} from "react-router-dom" ;
+import {HashRouter, Switch, Route} from "react-router-dom" ;
 
 import "./styles/styles.scss"
 
@@ -14,7 +14,7 @@ class App extends React.Component {
 
     render(){
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <Header />
                 <Switch>
                     <Route exact path="/" component={MainHome} />
@@ -23,7 +23,7 @@ class App extends React.Component {
                     <Route component={Main404} />
                 </Switch>
                 <Footer />
-            </BrowserRouter>
+            </HashRouter>
 
         )
     }
