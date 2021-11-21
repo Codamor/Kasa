@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AdelinoAraujo_11_19102021/static/css/main.7281c7c6.chunk.css",
-    "main.js": "/AdelinoAraujo_11_19102021/static/js/main.7f741e4a.chunk.js",
-    "main.js.map": "/AdelinoAraujo_11_19102021/static/js/main.7f741e4a.chunk.js.map",
+    "main.js": "/AdelinoAraujo_11_19102021/static/js/main.5654ccc5.chunk.js",
+    "main.js.map": "/AdelinoAraujo_11_19102021/static/js/main.5654ccc5.chunk.js.map",
     "runtime-main.js": "/AdelinoAraujo_11_19102021/static/js/runtime-main.b7517df5.js",
     "runtime-main.js.map": "/AdelinoAraujo_11_19102021/static/js/runtime-main.b7517df5.js.map",
     "static/js/2.eed481ff.chunk.js": "/AdelinoAraujo_11_19102021/static/js/2.eed481ff.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.b7517df5.js",
     "static/js/2.eed481ff.chunk.js",
     "static/css/main.7281c7c6.chunk.css",
-    "static/js/main.7f741e4a.chunk.js"
+    "static/js/main.5654ccc5.chunk.js"
   ]
 }
