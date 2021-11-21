@@ -16,7 +16,7 @@
     }
     & img{
         @media screen and (max-width: $small-resolution){
-            width: 100%;
+            width: 150px;
         }
     }
 }
