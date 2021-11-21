@@ -2,10 +2,6 @@ import React from "react";
 import "./Banner.scss" ;
 
 class Banner extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="banner">

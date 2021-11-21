@@ -7,9 +7,6 @@ import aboutBackground from "../../assets/img/about_bg.png"
 
 
 class MainAbout extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
 

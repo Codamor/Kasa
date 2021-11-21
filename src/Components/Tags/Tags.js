@@ -2,9 +2,6 @@ import React from "react";
 import "./Tags.scss" ;
 
 class Tags extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         return (
@@ -16,9 +13,6 @@ class Tags extends React.Component{
                 }
             </div>
         )
-
-
-
     }
 }
 
