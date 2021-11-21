@@ -1,0 +1,12 @@
+@import "src/styles/_variables";
+
+.logo{
+  @media screen and (max-width: $small-resolution){
+    width: 50%;
+  }
+  & img{
+    @media screen and (max-width: $small-resolution){
+      width: 80%;
+    }
+  }
+}
