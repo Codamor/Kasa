@@ -48,7 +48,14 @@ class MainLocation extends React.Component{
     }
 
     componentDidMount() {
-        fetch("api.json")
+        fetch("api.json"
+            , {
+                headers : {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+
+            })
             .then(response => {
                 return response.json()
             })
