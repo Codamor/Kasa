@@ -9,7 +9,7 @@
     overflow: hidden;
     cursor: pointer;
     @media screen and (max-width: $small-resolution){
-        height: auto;
+        height: 255px;
     }
     &__title {
         position: absolute;
