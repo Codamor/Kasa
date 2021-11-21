@@ -1,3 +1,5 @@
+@import "src/styles/_variables";
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -11,5 +13,10 @@
         margin-bottom: 40px;
         color: #fff;
         font-weight: 500;
+    }
+    & img{
+        @media screen and (max-width: $small-resolution){
+            width: 100%;
+        }
     }
 }
