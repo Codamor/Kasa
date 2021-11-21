@@ -1,6 +1,12 @@
+@import "src/styles/_variables";
+
 .navigation{
     width: 310px;
     height: 35px;
+    @media screen and (max-width: $small-resolution){
+        width: 50%;
+        height: auto;
+    }
     &__list{
         display: flex;
         justify-content: space-around;
@@ -9,6 +15,9 @@
     &__link{
         font-size: 1.4em;
         text-decoration: none;
+        @media screen and (max-width: $small-resolution){
+            font-size: 1em;
+        }
     }
     &__link:hover{
         text-decoration: underline;
