@@ -15,9 +15,9 @@
     &__link{
         font-size: 1.4em;
         text-decoration: none;
-        text-transform: uppercase;
         @media screen and (max-width: $small-resolution){
             font-size: 0.8em;
+            text-transform: uppercase;
         }
     }
     &__link:hover{
