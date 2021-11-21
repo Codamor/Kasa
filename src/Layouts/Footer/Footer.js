@@ -9,7 +9,7 @@ class Footer extends React.Component{
     render(){
         return(
             <footer className="footer">
-                <Logo logo={logoImage}/>
+                <Logo logo={logoImage} className={"footer__logo"}/>
                 <h3 className="footer__title">© 2020 Kasa. All rights Reserved.</h3>
             </footer>
         )
