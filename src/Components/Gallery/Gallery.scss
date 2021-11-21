@@ -11,6 +11,7 @@
     background-color: #f6f6f6;
     @media screen and (max-width: $small-resolution){
         padding: 0;
+        margin-bottom: 20px;
         background-color: transparent;
     }
 }
