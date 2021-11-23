@@ -44,14 +44,14 @@ class Carousel extends React.Component{
                         (picture, index) => <img
                                         className="carousel__picture"
                                         src={picture}
-                                        visible={index === this.state.currentIndex ? "true" : ""}
+                                        visible={index === this.state.currentIndex ? "true" : "false"}
                                         alt={this.props.picturesTitle}
                                         title={this.props.picturesTitle}
                                         key={picture}
                                     />
                     )
                 }
-                <div className="carousel__nav">
+                <div className="carousel__nav" visible={this.props.pictures.length <= 1 ? "false" : "true"}>
                     <div className="carousel__nav-previous" onClick={this.previousImage.bind(this)}>
                     </div>
                     <div className="carousel__nav-next" onClick={this.nextImage.bind(this)}>
