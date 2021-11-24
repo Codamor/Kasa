@@ -17,8 +17,8 @@ class App extends React.Component {
                 <Switch>
                     <Route exact path="/" component={MainHome} />
                     <Route path="/about" component={MainAbout} />
-                    <Route path="/:id" component={MainLocation}/>
-                    <Route component={Main404} />
+                    <Route path="/locations/:id" component={MainLocation}/>
+                    <Route path="*" component={Main404} />
                 </Switch>
                 <Footer />
             </HashRouter>

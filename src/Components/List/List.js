@@ -8,7 +8,7 @@ class List extends React.Component{
             <ul>
                 {
                     this.props.list.map(
-                        element => <li>{element}</li>
+                        element => <li key={element}>{element}</li>
                     )
                 }
             </ul>

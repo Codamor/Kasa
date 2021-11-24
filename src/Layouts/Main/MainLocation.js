@@ -66,6 +66,7 @@ class MainLocation extends React.Component{
 
     render() {
         return (
+
             <main className="main">
                 <Carousel pictures={this.state.pictures} picturesTitle={this.state.title} />
 
