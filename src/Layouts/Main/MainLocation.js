@@ -56,7 +56,6 @@ class MainLocation extends React.Component{
     }
 
     componentDidMount() {
-        console.log("didmount")
         fetch("api.json"
             , {
                 headers : {
@@ -71,6 +70,13 @@ class MainLocation extends React.Component{
             .then(result => {
                 this.setLocationStateFromLocationId(result, this.locationId)
             })
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+
+        if (prevProps.match.url !== this.props.match.url){
+            this.props.history.replace("/404") ;
+        }
     }
 
     render() {
