@@ -9,6 +9,7 @@ import List from "../../Components/List/List";
 import Container from "../../Components/Container/Container";
 
 class MainLocation extends React.Component{
+
     constructor(props) {
         super(props);
         this.locationId = this.props.match.params.id;
@@ -21,8 +22,7 @@ class MainLocation extends React.Component{
             hostPicture: "",
             rating: 0,
             description: "",
-            equipments: [],
-            match: false
+            equipments: []
         }
     }
 
@@ -30,13 +30,12 @@ class MainLocation extends React.Component{
         this.props.history.replace("/404") ;
     }
 
-
     getLocation(allLocations, locationID){
-        let found = false ;
+        let locationFounded = false ;
 
-        for (let i = 0; i < allLocations.length; i++) { //TODO find method instead for
+        for (let i = 0; i < allLocations.length; i++) {
             if (allLocations[i].id === locationID){
-                found = true ;
+                locationFounded = true ;
 
                let location = {
                     pictures: allLocations[i].pictures,
@@ -47,14 +46,13 @@ class MainLocation extends React.Component{
                     hostPicture: allLocations[i].host.picture,
                     rating: allLocations[i].rating,
                     description: allLocations[i].description,
-                    equipments: allLocations[i].equipments,
-                    match: true
+                    equipments: allLocations[i].equipments
                 }
                 this.setState(location) ;
             }
         }
 
-        if (found === false){
+        if (locationFounded === false){
             this.redirectTo404()
         }
     }
@@ -77,10 +75,10 @@ class MainLocation extends React.Component{
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        let previousID = prevProps.match.params.id ;
-        let actualID = this.props.match.params.id ;
+        let previousIdFromURL = prevProps.match.params.id ;
+        let actualIdFromURL = this.props.match.params.id ;
 
-       if(previousID !== actualID ){
+       if(previousIdFromURL !== actualIdFromURL ){
            fetch("api.json"
                , {
                    headers : {
@@ -93,13 +91,14 @@ class MainLocation extends React.Component{
                    return response.json()
                })
                .then(result => {
-                   this.getLocation(result, this.props.match.params.id)
+                   this.getLocation(result, actualIdFromURL)
                })
        }
 
     }
 
     render() {
+
         return (
 
             <main className="main">
