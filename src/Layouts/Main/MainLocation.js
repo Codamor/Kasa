@@ -26,8 +26,12 @@ class MainLocation extends React.Component{
     }
 
     setLocationStateFromLocationId(allLocations){
+        let found = false ;
+
         for (let i = 0; i < allLocations.length; i++) { //TODO find method instead for
             if (allLocations[i].id === this.locationId){
+                found = true ;
+
                 /*let location = allLocations[i]*/ //TODO a la place de allocations[i]
                 this.setState(
                     {
@@ -45,9 +49,14 @@ class MainLocation extends React.Component{
                 break ; //TODO check
             }
         }
+
+        if (found === false){
+            this.props.history.replace("/404") ;
+        }
     }
 
     componentDidMount() {
+        console.log("didmount")
         fetch("api.json"
             , {
                 headers : {
