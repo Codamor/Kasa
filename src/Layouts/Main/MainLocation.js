@@ -50,8 +50,6 @@ class MainLocation extends React.Component{
                     equipments: allLocations[i].equipments,
                     match: true
                 }
-
-                console.log("setstatie")
                 this.setState(location) ;
             }
         }
@@ -76,6 +74,29 @@ class MainLocation extends React.Component{
             .then(result => {
                 this.getLocation(result, this.locationId)
             })
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        let previousID = prevProps.match.params.id ;
+        let actualID = this.props.match.params.id ;
+
+       if(previousID !== actualID ){
+           fetch("api.json"
+               , {
+                   headers : {
+                       'Content-Type': 'application/json',
+                       'Accept': 'application/json'
+                   }
+
+               })
+               .then(response => {
+                   return response.json()
+               })
+               .then(result => {
+                   this.getLocation(result, this.props.match.params.id)
+               })
+       }
+
     }
 
     render() {
