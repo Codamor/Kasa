@@ -21,37 +21,43 @@ class MainLocation extends React.Component{
             hostPicture: "",
             rating: 0,
             description: "",
-            equipments: []
+            equipments: [],
+            match: false
         }
     }
 
-    setLocationStateFromLocationId(allLocations){
+    redirectTo404(){
+        this.props.history.replace("/404") ;
+    }
+
+
+    getLocation(allLocations, locationID){
         let found = false ;
 
         for (let i = 0; i < allLocations.length; i++) { //TODO find method instead for
-            if (allLocations[i].id === this.locationId){
+            if (allLocations[i].id === locationID){
                 found = true ;
 
-                /*let location = allLocations[i]*/ //TODO a la place de allocations[i]
-                this.setState(
-                    {
-                        pictures: allLocations[i].pictures,
-                        title: allLocations[i].title,
-                        location: allLocations[i].location,
-                        tags: allLocations[i].tags,
-                        hostName: allLocations[i].host.name,
-                        hostPicture: allLocations[i].host.picture,
-                        rating: allLocations[i].rating,
-                        description: allLocations[i].description,
-                        equipments: allLocations[i].equipments
-                    }
-                )
-                break ; //TODO check
+               let location = {
+                    pictures: allLocations[i].pictures,
+                    title: allLocations[i].title,
+                    location: allLocations[i].location,
+                    tags: allLocations[i].tags,
+                    hostName: allLocations[i].host.name,
+                    hostPicture: allLocations[i].host.picture,
+                    rating: allLocations[i].rating,
+                    description: allLocations[i].description,
+                    equipments: allLocations[i].equipments,
+                    match: true
+                }
+
+                console.log("setstatie")
+                this.setState(location) ;
             }
         }
 
         if (found === false){
-            this.props.history.replace("/404") ;
+            this.redirectTo404()
         }
     }
 
@@ -68,15 +74,8 @@ class MainLocation extends React.Component{
                 return response.json()
             })
             .then(result => {
-                this.setLocationStateFromLocationId(result, this.locationId)
+                this.getLocation(result, this.locationId)
             })
-    }
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-
-        if (prevProps.match.url !== this.props.match.url){
-            this.props.history.replace("/404") ;
-        }
     }
 
     render() {
