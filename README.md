@@ -1,57 +1,87 @@
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-
 # KASA
 
-![Les Petits Plats](kasa.png)
+![Kasa](kasa.png)
 
-## Présentation du contexte
-Kasa est une société de location d'appartements entre particuliers en France.
+## Table of contents
 
-## Ce que ce projet m'a permis de pratiquer
+- [Context](#context)
+- [Demonstration](#demonstration)
+- [Installation](#installation)
+  - [Prerequisites](#prerequesites)
+  - [Setup](#setup)
+- [What this project allow me to practice](#what-this-project-allowed-me-to-practice)
+  - [Skills](#skills)
+  - [Technologies / Methods](#technologies--methods)
+- [Resources](#resources)
+- [Instructions](#instructions)
+- [Expected deliverables](#expected-deliverables)
 
-### Compétences
+## Context
+Kasa is a private apartment rental company in France.
 
-- découper et intégrer une maquette,
-- structurer une page web en composants React,
-- mettre en forme une page web avec HTLM et CSS3,
-- générer du contenu dynamiquement depuis un fichier JSON,
+## Demonstration
+
+Kasa is visible on view-source:https://codamor.github.io/Kasa/
+
+## Installation
+
+### Prerequisites
+
+- Node v10.24.1
+
+### Setup
+
+Clone the repository, then :
+
+```
+npm install
+npm run start
+```
+
+## What this project allowed me to practice
+
+### Skills
+
+- cut and integrate a model,
+- structure a web page in React components,
+- formatting a web page with HTML and CSS3,
+- generate content dynamically from a JSON file,
 
 
-### Technologies / méthodes
+### Technologies / methods
 
 - HTML5 / CSS3,
--  Sass,
-- React, React DOM, React Router
+- Sass 1.56.1,
+- React 17.0.2,
+- React Router DOM 5.3.0,
 
-## Ressources à ma disposition
+## Resources
 
-* maquettes desktop et mobile,
-* fichier de données Json.
-
-
-## Consignes
-
-- les paramètres des routes sont gérés par React Router dans l'URL,
-  pour récupérer les informations de chaque logement,
-- il existe une page par route,
-- la page 404 est renvoyée pour chaque route inexistante, ou si une
-  valeur présente dans l’URL ne fait pas partie des données
-  renseignées,
-- la logique du routeur est réunie dans un seul fichier.
+* desktop and mobile models,
+* Json data file.
 
 
-## Livrables attendus
+## Instructions
 
-- découpage en composants modulaires et réutilisables,
-- un composant par fichier,
-- structure logique des différents fichiers,
-- utilisation des props entre les composants,
-- utilisation du state dans les composants quand c'est nécessaire,
-- gestion des événements,
-- composants à base de classe, aucun composant fonction,
-- le code ne devait pas produire d'erreur ou de warning dans la console.
+- route parameters are managed by React Router in the URL,
+  to retrieve the information for each dwelling,
+- there is one page per route,
+- the 404 page is returned for each non-existent route, or if a
+  value present in the URL is not part of the data
+  informed,
+- the logic of the router is united in a single file.
+
+
+## Expected deliverables
+
+- cutting into modular and reusable components,
+- one component per file,
+- logical structure of the different files,
+- use of props between components,
+- use of state in components when necessary,
+- event management,
+- class-based components, no function components,
+- the code should not produce any error or warning in the console.
 
 
 
