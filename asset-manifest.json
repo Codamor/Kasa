@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/AdelinoAraujo_11_19102021/static/css/main.f1df6ea7.chunk.css",
-    "main.js": "/AdelinoAraujo_11_19102021/static/js/main.cc484645.chunk.js",
-    "main.js.map": "/AdelinoAraujo_11_19102021/static/js/main.cc484645.chunk.js.map",
-    "runtime-main.js": "/AdelinoAraujo_11_19102021/static/js/runtime-main.b7517df5.js",
-    "runtime-main.js.map": "/AdelinoAraujo_11_19102021/static/js/runtime-main.b7517df5.js.map",
-    "static/js/2.eed481ff.chunk.js": "/AdelinoAraujo_11_19102021/static/js/2.eed481ff.chunk.js",
-    "static/js/2.eed481ff.chunk.js.map": "/AdelinoAraujo_11_19102021/static/js/2.eed481ff.chunk.js.map",
-    "static/js/3.3767dec6.chunk.js": "/AdelinoAraujo_11_19102021/static/js/3.3767dec6.chunk.js",
-    "static/js/3.3767dec6.chunk.js.map": "/AdelinoAraujo_11_19102021/static/js/3.3767dec6.chunk.js.map",
-    "index.html": "/AdelinoAraujo_11_19102021/index.html",
-    "static/css/main.f1df6ea7.chunk.css.map": "/AdelinoAraujo_11_19102021/static/css/main.f1df6ea7.chunk.css.map",
-    "static/js/2.eed481ff.chunk.js.LICENSE.txt": "/AdelinoAraujo_11_19102021/static/js/2.eed481ff.chunk.js.LICENSE.txt",
-    "static/media/about_bg.b83ea110.png": "/AdelinoAraujo_11_19102021/static/media/about_bg.b83ea110.png",
-    "static/media/home_bg.1f5e430c.png": "/AdelinoAraujo_11_19102021/static/media/home_bg.1f5e430c.png"
+    "main.css": "/Kasa/static/css/main.f7fe84a9.chunk.css",
+    "main.js": "/Kasa/static/js/main.e1ff2d01.chunk.js",
+    "main.js.map": "/Kasa/static/js/main.e1ff2d01.chunk.js.map",
+    "runtime-main.js": "/Kasa/static/js/runtime-main.82a78028.js",
+    "runtime-main.js.map": "/Kasa/static/js/runtime-main.82a78028.js.map",
+    "static/js/2.58300d28.chunk.js": "/Kasa/static/js/2.58300d28.chunk.js",
+    "static/js/2.58300d28.chunk.js.map": "/Kasa/static/js/2.58300d28.chunk.js.map",
+    "static/js/3.24747b1d.chunk.js": "/Kasa/static/js/3.24747b1d.chunk.js",
+    "static/js/3.24747b1d.chunk.js.map": "/Kasa/static/js/3.24747b1d.chunk.js.map",
+    "index.html": "/Kasa/index.html",
+    "static/css/main.f7fe84a9.chunk.css.map": "/Kasa/static/css/main.f7fe84a9.chunk.css.map",
+    "static/js/2.58300d28.chunk.js.LICENSE.txt": "/Kasa/static/js/2.58300d28.chunk.js.LICENSE.txt",
+    "static/media/about_bg.b83ea110.png": "/Kasa/static/media/about_bg.b83ea110.png",
+    "static/media/home_bg.1f5e430c.png": "/Kasa/static/media/home_bg.1f5e430c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b7517df5.js",
-    "static/js/2.eed481ff.chunk.js",
-    "static/css/main.f1df6ea7.chunk.css",
-    "static/js/main.cc484645.chunk.js"
+    "static/js/runtime-main.82a78028.js",
+    "static/js/2.58300d28.chunk.js",
+    "static/css/main.f7fe84a9.chunk.css",
+    "static/js/main.e1ff2d01.chunk.js"
   ]
 }
